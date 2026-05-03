@@ -1,12 +1,14 @@
 import './App.css';
+import Header from './Header';
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <h1>Bienvenue sur SenTransport</h1>
-      <p>Le transport en commun à Dakar</p>
-    </div>
+  <div className="App">
+    <Header />
+    <main className="contenu">
+    <p>Bienvenue ! Cette application vous aide a trouver votre ligne de bus a Dakar. </p>
+    </main>
+  </div>
   );
 }
-
 export default App;
