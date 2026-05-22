@@ -4,7 +4,7 @@
     "numero": "1",
     "depart": "Parcelles Assainies",
     "arrivee": "Plateau",
-    "arrets": 14,
+    "arrets": 8,
     "listeArrets": [
       "Parcelles U14", "Parcelles U10",
       "Camberene", "Patte d'Oie", "Grand Dakar",
@@ -16,7 +16,7 @@
     "numero": "7",
     "depart": "Guediawaye",
     "arrivee": "Place Obe",
-    "arrets": 18,
+    "arrets": 8,
     "listeArrets": [
       "Guediawaye", "Pikine", "Thiaroye",
       "Keur Massar", "Grand Yoff", "Parcelles",
@@ -28,7 +28,7 @@
     "numero": "15",
     "depart": "Pikine",
     "arrivee": "Medina",
-    "arrets": 12,
+    "arrets": 6,
     "listeArrets": [
       "Pikine Centre", "Thiaroye Gare",
       "Hann", "Colobane", "Fass", "Medina"
@@ -39,7 +39,7 @@
     "numero": "23",
     "depart": "Ouakam",
     "arrivee": "Grand Dakar",
-    "arrets": 10,
+    "arrets": 6,
     "listeArrets": [
       "Ouakam Village", "Mermoz", "Fann",
       "Point E", "Liberte 5", "Grand Dakar"
@@ -50,7 +50,7 @@
     "numero": "8",
     "depart": "Almadies",
     "arrivee": "Colobane",
-    "arrets": 16,
+    "arrets": 6,
     "listeArrets": [
       "Almadies", "Ngor", "Yoff",
       "Ouest Foire", "Liberte 6", "Colobane"
@@ -61,11 +61,12 @@
     "numero": "12",
     "depart": "Yoff",
     "arrivee": "Sandaga",
-    "arrets": 11,
+    "arrets": 6,
     "listeArrets": [
       "Yoff Village", "Aeroport LSS",
       "Parcelles U17", "Grand Yoff", "HLM", "Sandaga"
     ]
   }
+
 ]
 

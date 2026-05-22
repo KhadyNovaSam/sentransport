@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, CircleMarker } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './Carte.css';
@@ -14,6 +14,8 @@ L.Icon.Default.mergeOptions({
   shadowUrl:
     'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
 });
+
+// Fonction de calcul de distance (Haversine)
 function calculerDistance(lat1, lon1, lat2, lon2) {
   const R = 6371; // rayon de la Terre en km
   const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -56,7 +58,7 @@ function Carte() {
     }
   }, []);
 
-  // Trouver l'arrêt le plus proche
+  // Calcul de l’arrêt le plus proche
   useEffect(() => {
     if (positionUtilisateur && arrets.length > 0) {
       let proche = null;
@@ -101,9 +103,15 @@ function Carte() {
           </Marker>
         ))}
         {positionUtilisateur && (
-          <Marker position={positionUtilisateur}>
-            <Popup>Vous êtes ici</Popup>
-          </Marker>
+          <CircleMarker
+            center={positionUtilisateur}
+            radius={8}
+            color="red"
+            fillColor="red"
+            fillOpacity={0.8}
+          >
+            <Popup>📍 Vous êtes ici</Popup>
+          </CircleMarker>
         )}
       </MapContainer>
     </div>

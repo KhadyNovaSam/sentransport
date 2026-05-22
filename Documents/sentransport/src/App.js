@@ -95,7 +95,7 @@ function App() {
         ))}
 
         {ligneSelectionnee && <DetailLigne ligne={ligneSelectionnee} />}
-        <Carte />
+      <Carte />
       </main>
       <Footer />
     </div>
